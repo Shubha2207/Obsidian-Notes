@@ -1,0 +1,23 @@
+{
+	"nodes":[
+		{"type":"text","text":"Class A","id":"4373aa379225761d","x":-528,"y":-360,"width":105,"height":50},
+		{"type":"text","text":"Class B","id":"d40d06b049f6f63d","x":-528,"y":-226,"width":105,"height":50},
+		{"type":"text","text":"Class C","id":"b34ab879509528d3","x":-528,"y":-91,"width":105,"height":51},
+		{"type":"text","text":"Tightly coupled, voilating D principle","id":"02647bf650a36b3b","x":-600,"y":20,"width":250,"height":60},
+		{"type":"text","text":"Class A","id":"9b755b29420549eb","x":-68,"y":-360,"width":105,"height":50},
+		{"type":"text","text":"Class B","id":"0de25f8aaeda913a","x":-68,"y":-226,"width":105,"height":50},
+		{"type":"text","text":"Class C","id":"61e182d4b4f41540","x":-68,"y":-91,"width":105,"height":51},
+		{"type":"text","text":"Loosly coupled, Following D principle","id":"800dc922714c7a27","x":-140,"y":20,"width":250,"height":60},
+		{"type":"text","text":"Interface B","id":"01b52f5df3da3e69","x":-320,"y":-276,"width":130,"height":50},
+		{"type":"text","text":"Interface A","id":"098eb19213eeea09","x":-270,"y":-440,"width":130,"height":50},
+		{"type":"text","text":" Dependency Inversion Principle","id":"63991e92690559be","x":-380,"y":180,"width":280,"height":60,"color":"1"}
+	],
+	"edges":[
+		{"id":"87d12025c3e92351","fromNode":"9b755b29420549eb","fromSide":"left","toNode":"098eb19213eeea09","toSide":"bottom","color":"5","label":"implements"},
+		{"id":"76ad55577f41cd1c","fromNode":"d40d06b049f6f63d","fromSide":"top","toNode":"4373aa379225761d","toSide":"bottom","color":"2","label":"extends"},
+		{"id":"d35d6c33bd317db6","fromNode":"b34ab879509528d3","fromSide":"top","toNode":"d40d06b049f6f63d","toSide":"bottom","color":"2","label":"extends"},
+		{"id":"aefa6f2aa804ab17","fromNode":"01b52f5df3da3e69","fromSide":"top","toNode":"098eb19213eeea09","toSide":"left","color":"2","label":"extends"},
+		{"id":"b150cc6597b01b65","fromNode":"0de25f8aaeda913a","fromSide":"left","toNode":"01b52f5df3da3e69","toSide":"bottom","color":"5","label":"impl"},
+		{"id":"ec2765178d37f24b","fromNode":"61e182d4b4f41540","fromSide":"left","toNode":"01b52f5df3da3e69","toSide":"bottom","color":"5","label":"implements"}
+	]
+}
